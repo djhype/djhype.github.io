@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <style>
+      #container{
+        font-family:monospace;
+        font-weight:bold;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  </head>
+  
+  <body>
+    
+    <div id="container">
+      <button id="got-cucked">
+        Got Cucked
+      </button>
+      <p>
+        Got cucked <span id="cuck-count">0</span> times
+      </p>
+    </div>
+    
+    <script>
+      window.cucked = 0;
+      
+      $('#got-cucked').on('click', function() {
+        window.cucked++;
+        $('#cuck-count').html(window.cucked);
+      });
+    </script>
+    
+  </body>
+</html>
